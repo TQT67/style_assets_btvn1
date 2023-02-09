@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import styles from "./style.module.css";
 
-function App() {
+const Layout = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <div className={styles.sidebar}>
+        <h1>Sidebar</h1>
+        <p>Nội dung phần sidebar</p>
+      </div>
+      <div className={styles.content}>
+        <h1>Nội dung</h1>
+        <p>Nội dung là không có nội dung</p>
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Layout;

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: blueviolet;
+}
+
+.content {
+  width: 70%;
+  background-color: greenyellow;
+}
